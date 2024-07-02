@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Equipments</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; 
+            color: #333;
+        }
+
+        
+        .navbar {
+            background-color: #333; 
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar ul li {
+            margin: 0;
+        }
+
+        .navbar ul li a {
+            display: block;
+            color: white; 
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease; 
+        }
+
+        .navbar ul li a:hover {
+            background-color: #555; 
+        }
+
+        /* Page header styles */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #4CAF50, #81C784); 
+            color: white;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+       
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .content p {
+            max-width: 600px;
+            text-align: center;
+            line-height: 1.6;
+            color: #666; 
+        }
+
+    
+        .center-button {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .center-button button {
+            padding: 15px 30px;
+            font-size: 16px;
+            background-color: #4CAF50; 
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            transition: background-color 0.3s ease, transform 0.3s ease; 
+        }
+
+        .center-button button:hover {
+            background-color: #45a049; 
+            transform: translateY(-2px);
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="inventory">View Equipment</a></li>
+            <li><a href="view_reservations">View Reservations</a></li>
+            <li><a href="logout">Logout</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome to the Rental Equipments at Westminster University</h1>
+    </header>
+    <div class="content">
+        <p>Explore a wide range of equipment available for rental at Westminster University. Whether you need items for academic projects, research, or personal use, we have a variety of equipment to meet your needs. Browse our inventory and make reservations easily.</p>
+        
+        <!-- Centered button for browsing equipment -->
+        <div class="center-button">
+            <button onclick="window.location.href='inventory'">Browse Equipment</button>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Westminster University. All rights reserved.
+    </footer>
+</body>
+</html>
